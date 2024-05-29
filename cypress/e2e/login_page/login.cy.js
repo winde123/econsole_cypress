@@ -12,6 +12,8 @@ describe('This is a straight through login', ()=>{
     it('should check for the relevant selectors',() => {
         cy.visit('/')
         loginpage.username_inputfield().type(Cypress.env('username'))
+        loginpage.password_inputfield().type(Cypress.env('pw'))
+        cy.get(loginpage.login_button()).click()
 
     })
 
