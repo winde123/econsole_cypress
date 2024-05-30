@@ -8,6 +8,7 @@ module.exports = defineConfig({
 
       return config
     },
+    supportFile: 'cypress/support/e2e.js'
   },
   env:{
     username: 'Sup01',
